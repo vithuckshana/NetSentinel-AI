@@ -1,0 +1,300 @@
+{
+  "Random Forest": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "precision_weighted": 1.0,
+    "recall_weighted": 1.0,
+    "f1_weighted": 1.0,
+    "fpr_benign": 0.0,
+    "inference_latency_us": 28.87,
+    "confusion_matrix": [
+      [
+        3900,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        900,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        900,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        300
+      ]
+    ],
+    "classification_report": {
+      "BENIGN": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 3900.0
+      },
+      "PortScan": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 900.0
+      },
+      "DoS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 900.0
+      },
+      "Brute Force": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 300.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6000.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6000.0
+      }
+    },
+    "train_time_sec": 2.13
+  },
+  "feature_importances": [
+    {
+      "feature": "Packet Length Std",
+      "importance": 0.087
+    },
+    {
+      "feature": "Flow IAT Min",
+      "importance": 0.0805
+    },
+    {
+      "feature": "Fwd IAT Min",
+      "importance": 0.0668
+    },
+    {
+      "feature": "Bwd Packet Length Mean",
+      "importance": 0.0641
+    },
+    {
+      "feature": "Bwd IAT Min",
+      "importance": 0.0633
+    },
+    {
+      "feature": "Packet Length Variance",
+      "importance": 0.0567
+    },
+    {
+      "feature": "Avg Bwd Segment Size",
+      "importance": 0.0533
+    },
+    {
+      "feature": "SYN Flag Count",
+      "importance": 0.05
+    },
+    {
+      "feature": "Total Fwd Packets",
+      "importance": 0.0467
+    },
+    {
+      "feature": "Fwd Packet Length Std",
+      "importance": 0.0428
+    },
+    {
+      "feature": "Fwd IAT Std",
+      "importance": 0.0367
+    },
+    {
+      "feature": "Max Packet Length",
+      "importance": 0.0339
+    },
+    {
+      "feature": "Flow IAT Std",
+      "importance": 0.0333
+    },
+    {
+      "feature": "Bwd Packet Length Std",
+      "importance": 0.0301
+    },
+    {
+      "feature": "Bwd Packet Length Max",
+      "importance": 0.03
+    }
+  ],
+  "Decision Tree": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "precision_weighted": 1.0,
+    "recall_weighted": 1.0,
+    "f1_weighted": 1.0,
+    "fpr_benign": 0.0,
+    "inference_latency_us": 0.88,
+    "confusion_matrix": [
+      [
+        3900,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        900,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        900,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        300
+      ]
+    ],
+    "classification_report": {
+      "BENIGN": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 3900.0
+      },
+      "PortScan": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 900.0
+      },
+      "DoS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 900.0
+      },
+      "Brute Force": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 300.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6000.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6000.0
+      }
+    },
+    "train_time_sec": 0.97
+  },
+  "Logistic Regression": {
+    "accuracy": 0.9998,
+    "precision_macro": 0.9997,
+    "recall_macro": 0.9997,
+    "f1_macro": 0.9997,
+    "precision_weighted": 0.9998,
+    "recall_weighted": 0.9998,
+    "f1_weighted": 0.9998,
+    "fpr_benign": 0.0,
+    "inference_latency_us": 0.78,
+    "confusion_matrix": [
+      [
+        3900,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        900,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        899,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        300
+      ]
+    ],
+    "classification_report": {
+      "BENIGN": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 3900.0
+      },
+      "PortScan": {
+        "precision": 0.9988901220865705,
+        "recall": 1.0,
+        "f1-score": 0.9994447529150472,
+        "support": 900.0
+      },
+      "DoS": {
+        "precision": 1.0,
+        "recall": 0.9988888888888889,
+        "f1-score": 0.9994441356309061,
+        "support": 900.0
+      },
+      "Brute Force": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 300.0
+      },
+      "accuracy": 0.9998333333333334,
+      "macro avg": {
+        "precision": 0.9997225305216426,
+        "recall": 0.9997222222222222,
+        "f1-score": 0.9997222221364883,
+        "support": 6000.0
+      },
+      "weighted avg": {
+        "precision": 0.9998335183129855,
+        "recall": 0.9998333333333334,
+        "f1-score": 0.9998333332818929,
+        "support": 6000.0
+      }
+    },
+    "train_time_sec": 0.73
+  },
+  "Isolation Forest": {
+    "accuracy_anomaly": 0.8973,
+    "f1_anomaly": 0.872,
+    "train_time_sec": 1.3
+  }
+}
