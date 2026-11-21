@@ -13,17 +13,32 @@ from fastapi.staticfiles import StaticFiles
 
 from .core.state import state
 from .db.database import init_db
+from .engine.sniffer import NetworkSniffer
 from .api.alerts import router as alerts_router
 from .api.analytics import router as analytics_router
 from .api.capture import router as capture_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup: initialize database and background traffic simulator
+    # Startup: initialize database and live physical Scapy sniffer
     state.main_loop = asyncio.get_running_loop()
     await init_db()
+    
+    # Start REAL Physical Network Sniffer
+    try:
+        state.sniffer = NetworkSniffer(
+            on_flow_complete=state.handle_completed_flow,
+            on_packet_seen=state.handle_packet_seen
+        )
+        state.sniffer.start()
+        state.is_sniffing = True
+        print("[NetSentinel] REAL-TIME PHYSICAL PACKET SNIFFER STARTED on network interface!")
+    except Exception as e:
+        print(f"[NetSentinel] Warning: Could not start physical sniffer: {e}")
+        
+    # Also start background traffic generator
     state._sim_task = asyncio.create_task(state.run_traffic_simulator())
-    print("[NetSentinel] System initialized. Background traffic simulator running.")
+    print("[NetSentinel] System initialized and live monitoring active.")
     yield
     # Shutdown
     state.simulated_traffic_active = False
