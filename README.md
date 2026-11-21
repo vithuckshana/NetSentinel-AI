@@ -1,6 +1,5 @@
 # NetSentinel AI: AI-Powered Network Intrusion Detection & Real-Time Threat Monitoring System
 
-[![Project Type](https://img.shields.io/badge/Project-Undergraduate%20Final%20Year-blue.svg)](https://github.com)
 [![Machine Learning](https://img.shields.io/badge/ML-Random%20Forest%20%7C%20Decision%20Tree%20%7C%20Isolation%20Forest-success.svg)](https://scikit-learn.org)
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI%20%2B%20WebSockets-009688.svg)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/Frontend-React%20%2B%20Tailwind%20CSS-61DAFB.svg)](https://react.dev)
