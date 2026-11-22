@@ -52,7 +52,6 @@ The models were evaluated on 6,000 stratified, unseen test flow vectors across 4
 4. **Bwd Packet Length Mean** (6.41%) &mdash; Identifies absence of server response in scanning or DoS flooding.
 5. **Bwd IAT Min** (6.33%) &mdash; Response timing signature.
 
----
 
 ## 🚀 Quickstart & Execution Guide
 
